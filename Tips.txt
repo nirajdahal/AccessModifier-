@@ -1,0 +1,22 @@
+Access Modifiers 
+
+- Private : It can be accessed within the class only
+- Protected : It can be accessed within the derived classes
+- Internal : It can be accessed within the class library.
+(Incase of internal we can look at a example: 
+ If we have a class that contains connection string(sensitive) then it should not be called directly from other libraries
+ So we can make a method that can access the connection string and perform some operation and give access to that method if needed.
+ We dont give access to the connection string class directly
+)
+-Class can only be public, internal, protected
+-Protected Internal Method can be accssed by class that is within the derived class and same class library or other library
+-Private Protected Method can be accssed by class that is within the derived class and same class library
+-To call method of parents methods from child method use base.ParentMethodName(); or simply ParentMethodName();
+
+Use Cases of Each:
+Private, Public (Most of the time)
+Protected, Internal (Sometimes)
+Protected Internal(May encounter sometimes)
+Private Protected(Rarely)
+
+Pro Tips: Identify who needs an object in order to understand which modifiers it need. (Start with private and then later change it later if needed)
