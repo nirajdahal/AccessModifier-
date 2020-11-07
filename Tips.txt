@@ -8,7 +8,7 @@ Access Modifiers
  So we can make a method that can access the connection string and perform some operation and give access to that method if needed.
  We dont give access to the connection string class directly
 )
--Class can only be public, internal, protected
+-Class can only be public, internal
 -Protected Internal Method can be accssed by class that is within the derived class and same class library or other library
 -Private Protected Method can be accssed by class that is within the derived class and same class library
 -To call method of parents methods from child method use base.ParentMethodName(); or simply ParentMethodName();
